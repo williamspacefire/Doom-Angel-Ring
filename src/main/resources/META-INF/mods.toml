@@ -1,0 +1,16 @@
+modLoader="javafml" 
+loaderVersion="[32,)"
+[[mods]]
+modId="doomangelring"
+version="${file.jarVersion}"
+displayName="Doom Angel Ring"
+authors="AzureDoomC"
+description='''
+This mod adds an Angel Ring, which allows you to fly..
+'''
+[[dependencies.angelring]]
+   modId="curios"
+   mandatory=true
+   versionRange="[FORGE-1.16.1-3.0-beta2,]"
+   ordering="AFTER"
+   side="BOTH"
