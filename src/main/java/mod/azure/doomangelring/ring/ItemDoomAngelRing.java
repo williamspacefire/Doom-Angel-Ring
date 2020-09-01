@@ -3,7 +3,7 @@ package mod.azure.doomangelring.ring;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import mod.azure.doomangelring.register.ItemRegistry;
+import mod.azure.doomangelring.DoomAngelRing;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -73,7 +73,7 @@ public class ItemDoomAngelRing extends Item {
 
 			@Override
 			public boolean canEquip(String identifier, LivingEntity entityLivingBase) {
-				return !CuriosApi.getCuriosHelper().findEquippedCurio(ItemRegistry.RING.get(), entityLivingBase)
+				return !CuriosApi.getCuriosHelper().findEquippedCurio(DoomAngelRing.RING.get(), entityLivingBase)
 						.isPresent();
 			}
 		};
