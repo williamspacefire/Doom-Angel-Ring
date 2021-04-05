@@ -2,12 +2,12 @@ modLoader="javafml"
 loaderVersion="[32,)"
 license="MIT"
 [[mods]]
-modId="doomangelring"
+modId="pandoraring"
 version="${file.jarVersion}"
-displayName="Doom Angel Ring"
-authors="AzureDoomC"
+displayName="Pandora's Ring"
+authors="William Spacefire"
 description='''
-This mod adds an Angel Ring, which allows you to fly..
+This is the Pandora's Ring, which allows you to fly..
 '''
 [[dependencies.angelring]]
    modId="curios"

@@ -1,9 +1,9 @@
-package mod.azure.doomangelring.ring;
+package xyz.spacefire.pandoraring.ring;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import mod.azure.doomangelring.DoomAngelRing;
+import xyz.spacefire.pandoraring.PandoraRing;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -18,9 +18,9 @@ import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.CuriosCapability;
 import top.theillusivec4.curios.api.type.capability.ICurio;
 
-public class ItemDoomAngelRing extends Item {
+public class ItemPandoraRing extends Item {
 
-	public ItemDoomAngelRing() {
+	public ItemPandoraRing() {
 		super(new Item.Properties().maxStackSize(1).group(ItemGroup.MISC).defaultMaxDamage(500));
 	}
 
@@ -73,7 +73,7 @@ public class ItemDoomAngelRing extends Item {
 
 			@Override
 			public boolean canEquip(String identifier, LivingEntity entityLivingBase) {
-				return !CuriosApi.getCuriosHelper().findEquippedCurio(DoomAngelRing.RING.get(), entityLivingBase)
+				return !CuriosApi.getCuriosHelper().findEquippedCurio(PandoraRing.RING.get(), entityLivingBase)
 						.isPresent();
 			}
 		};
