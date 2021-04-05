@@ -20,7 +20,7 @@ apply plugin: 'com.matthewprenger.cursegradle'
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
 
-version = '0.0.1'
+version = '0.0.2'
 group = 'xyz.spacefire.pandoraring'
 archivesBaseName = 'pandoraring-1.16.4'
 
@@ -34,7 +34,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                doomangelring {
+                pandoraring {
                     source sourceSets.main
                 }
             }
@@ -44,7 +44,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                doomangelring {
+                pandoraring {
                     source sourceSets.main
                 }
             }
